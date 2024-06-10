@@ -26,8 +26,9 @@ namespace HotelManagement
             while (true)
             {
                 Console.WriteLine("1. Khach vao phong");
-                Console.WriteLine("2. Khach ra phong");
+                Console.WriteLine("2. Khach tra phong");
                 Console.WriteLine("3. Thoat");
+                Console.WriteLine("4. Cap nhat tien nuoc phong");
                 Console.Write("Chon mot tuy chon: ");
                 string luaChon = Console.ReadLine();
 
@@ -106,20 +107,55 @@ namespace HotelManagement
                         }
                     }
                 }
+
+
                 else if (luaChon == "3")
                 {
                     break;
                 }
+
+                else if (luaChon == "4")
+                {
+                    Console.WriteLine("Nhap so phong can cap nhat tien nuoc:");
+                    string soPhongNhap = Console.ReadLine();
+                    int soPhong;
+                    if (int.TryParse(soPhongNhap.Trim(), out soPhong) && dsPhong.ContainsKey(soPhong))
+                    {
+                        Phong phongChon = dsPhong[soPhong];
+                        Console.WriteLine($"Nhap so tien nuoc moi cho phong {soPhong}:");
+                        string tienNuocMoiStr = Console.ReadLine();
+                        decimal tienNuocMoi;
+                        if (decimal.TryParse(tienNuocMoiStr, out tienNuocMoi))
+                        {
+                            phongChon.CapNhatTienNuoc(tienNuocMoi);
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("Gia tri tien nuoc khong hop le.");
+                            Console.ResetColor();
+                        }
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"Phong {soPhongNhap} khong ton tai.");
+                        Console.ResetColor();
+                    }
+                }
+
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Lua chon khong hop le.");
                     Console.ResetColor();
-
                 }
             }
+
+
         }
     }
+
 }
 
 
