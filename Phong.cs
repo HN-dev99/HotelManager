@@ -101,5 +101,22 @@ namespace HotelManagement
                 return giaGioDau + giaGioThuHai + (tongSoGio - 2) * giaGioThem;
             }
         }
+
+        public void CapNhatTienNuoc(decimal tienNuocMoi)
+        {
+            if (GioVao != null)
+            {
+                TienNuoc = tienNuocMoi;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"Da cap nhat so tien nuoc moi cho phong {SoPhong}: {TienNuoc}");
+                Console.ResetColor();
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"Khong the cap nhat tien nuoc cho phong {SoPhong} vi chua co khach.");
+                Console.ResetColor();
+            }
+        }
     }
 }
