@@ -1,0 +1,14 @@
+D:\ThaoNguyenHotel\bin\Debug\net8.0\ThaoNguyenHotel.exe
+D:\ThaoNguyenHotel\bin\Debug\net8.0\ThaoNguyenHotel.deps.json
+D:\ThaoNguyenHotel\bin\Debug\net8.0\ThaoNguyenHotel.runtimeconfig.json
+D:\ThaoNguyenHotel\bin\Debug\net8.0\ThaoNguyenHotel.dll
+D:\ThaoNguyenHotel\bin\Debug\net8.0\ThaoNguyenHotel.pdb
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ThaoNguyenHotel.GeneratedMSBuildEditorConfig.editorconfig
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ThaoNguyenHotel.AssemblyInfoInputs.cache
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ThaoNguyenHotel.AssemblyInfo.cs
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ThaoNguyenHotel.csproj.CoreCompileInputs.cache
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ThaoNguyenHotel.dll
+D:\ThaoNguyenHotel\obj\Debug\net8.0\refint\ThaoNguyenHotel.dll
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ThaoNguyenHotel.pdb
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ThaoNguyenHotel.genruntimeconfig.cache
+D:\ThaoNguyenHotel\obj\Debug\net8.0\ref\ThaoNguyenHotel.dll
